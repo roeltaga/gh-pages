@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: red;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+.container {
+	display: grid;
+	grid-template-columns:32px auto 50px;
+	grid-template-rows: 50px auto auto auto auto auto;
+	grid-template-areas: 
+	"logo logo menu"
+	"bann bann bann"
+	"quot quot quot"
+	"pack pack pack"
+	"vide vide vide"
+	"foot foot foot";
+}
+
+
+
+
+.logo {
+	grid-area: logo;
+	background-color: #666;
+	padding-left: 8px;
+	color: white;
+	font-size: 34px;
+}
+
+	.logo img {height:50px;}
+
+
+
+
+.menu {
+	grid-area: menu;
+	text-align: center;
+	font-size: 16px;
+	background-image: url("../img/menu.png");
+	background-size: cover;
+}
+
+	.menu a {
+		padding: 50%;
+		padding-bottom: 100%;
+	}
+
+	/*.menu img {
+		height: 100%;
+	}*/
+
+
+
+
+.banner {
+	grid-area: bann;
+	background-color: #eee;
+	color: #222;
+	text-align: center;
+	font-size: 0px;
+}
+
+	.banner img {width: 100%; font-size: 24px;}
+
+
+
+
+.quote {
+	grid-area: quot;
+	background-color: #c6b;
+	font-style: italic;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+
+
+/*---OUR PACKS---*/
+
+.our-packs {
+	background-color: #fed;
+	grid-area: pack;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+.our-packs .title {
+	padding-bottom: 20px;
+	text-decoration: underline;
+}
+
+.packs {
+	text-align: left;
+	padding-left: 30px;
+}
+
+ .packs ul {
+	padding: 5px 5px 20px 10px;
+	text-decoration: none;
+} 
+
+.price3 span:first-child {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+
+
+
+.video {
+	grid-area: vide;
+}
+
+.video-warp {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-warp iframe {
+	background-image: url("../img/video-placeholder.png");
+	background-position: center center;
+	background-size: cover;
+	position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.footer {
+	grid-area: foot;
+}
+	
+	form {
+		margin: 20px;
+	}
+	
+	input {
+		padding: 8px;
+		width: 60%;
+	}
+
+	textarea {
+		width: 85%;
+		padding: 8px;
+		height: 120px;
+		margin: 6px 0 10px;
+	}
+
+
+	.social-media {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		justify-items: center;
+	}
+
+	.social-media div {
+		background-color: #49f;
+	}
+
+	.copyright {
+		text-align: center;
+		background-color: #555;
+		padding: 5px;
+	}
+
+
+#menu {
+	height: 500px;
+	width: 100%;
+	background-color: rgba(1,200,20,0.5);
+	position: fixed;
+	top: 0px;
+	left: 100%; /*Menu Slider*/
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+
+/*@media screen and (min-width: 520px) {
+    code {here}
+}*/
+
+
+/*
+	LG LS-720 width 980
+*/
